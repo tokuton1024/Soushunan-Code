@@ -25,7 +25,7 @@
             <a href = "<?php home_url()?>/jp/blog/">
             <img src="<?php bloginfo('template_url');?>/link/blog.png" class = "link" />
             </a>
-            <a href = "<?php home_url()?>/jp/media/">
+            <a href = "<?php home_url()?>/jp/category/coverage/">
             <img src="<?php bloginfo('template_url');?>/link/media.png" class = "link" />
             </a>
             <a href = "<?php home_url()?>/jp/contact/">
