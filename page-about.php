@@ -5,18 +5,22 @@
 	<tr>
     	<td id = "left" rowspan="3" style="width_L"></td>
     	<td rowspan="3" style="width:130px;"><img id="left-img" src="<?php bloginfo('template_url');?>/img/top-page-Left.png" style="width:130px;"></td>
-        <td id = "top" colspan="2"></td>
+        <td id = "top" colspan="2"><?php include('global_menu.php'); ?></td>
         <td id = "right" rowspan="3" style="width:24px;"></td>
     </tr>
 	<tr id = "middle" style="height:398px;">
-        <td style="float:right;"><div><img src="<?php bloginfo('template_url');?>/title/<?php the_title(); ?>.png" style="height:52px;padding-top:55px;padding-left:9px;" class ="image-title"></div>
+        <td style="float:right;">
+        <div>
+        	<img src="<?php bloginfo('template_url');?>/title/<?php the_title(); ?>.png" class ="image-title">
+        	<!--img src="<?php bloginfo('template_url');?>/title/<?php the_title(); ?>.png" style="height:52px;padding-top:55px;padding-left:9px;" class ="image-title"-->
+        </div>
         	<div style="clear:both;height:14px;"></div>
         	<div style="height:277px;width:357px;padding-left:17px;padding-right:26px;text-align:left;">
 			<?php while ( have_posts()) : the_post();?>
 			<?php the_content();?>
 		<?php endwhile; ?></div>
         </td>
-        <td><div><a href = "<?php home_url()?>/jp/"><img style="height:61px;float:right;margin-right:7px;" src="<?php bloginfo('template_url');?>/title/logo.png" class="image-logo"></div></a>
+        <td><div><!--a href = "<?php home_url()?>/jp/"><img style="height:61px;float:right;margin-right:7px;" src="<?php bloginfo('template_url');?>/title/logo.png" class="image-logo"></a--></div>
         	<div style="clear:both;height:17px;"></div>
         	<div><img style="height:320px;" src="<?php bloginfo('template_url');?>/img/<?php the_title(); ?>.png"></div>
             <div style="float:left;"><a href = "<?php home_url()?>/jp/building"><img src="<?php bloginfo('template_url');?>/page/<?php the_title(); ?>/LinkAboutTheBuilding.png"></a></div>
@@ -43,16 +47,13 @@
 			var height_T = Math.floor((h - h_middle)/2);
 			var height_B = Math.floor((h - h_middle)/2);
 				if(height_T > 0){
-					j("#top").css("height",height_T);
 					j("#bottom").css("height",height_B);
 				}
 				else{
-					j("#top").css("height",122);
 					j("#bottom").css("height",218);
 					}
 			}
 			else{
-				j("#top").css("height",122);
 				j("#bottom").css("height",218);
 			}
 			j("#left-img").css("height",h + 6);

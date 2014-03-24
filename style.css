@@ -170,3 +170,60 @@ img.sns-icon{
 	float:right;
 	margin-right:10px;
 }
+
+img.left{
+	height:100%;
+	width:100%;
+}
+/* グローバルメニュー */
+
+#global{
+	/*position: fixed;
+	top:120px;
+	left:120px;*/
+	margin-top:40px;
+	height:80px;
+    width:880px;
+	
+}
+#globalmenus{
+	height:50px;
+    width:880px;
+	
+}
+
+img.gIcon{
+	width:375px;
+    height:50px;
+	float:left;
+}
+
+img.gMenu{
+	width:125px;
+    height:30px;
+    float:left;
+}
+/* 各ページ */
+#top{
+	height:160px;	
+}
+img.image-title{
+	height:52px;
+	/*padding-top:55px;
+	padding-left:9px;*/
+}
+
+/* Category page */
+div.ImageTitle{
+	height:52px;
+	width:418px;
+}
+
+.C_Middle{
+	text-align:left;
+}
+
+div.Blog_ImageTitle{
+	height:52px;
+	width: 186px;
+}

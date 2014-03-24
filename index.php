@@ -49,7 +49,7 @@
 	<tr>
     	<td id="bottom" style="height:209px;"></td>
         <td>
-        	<div style="float:right;margin-right:2px;margin-top:3px;">毎月第三木曜日に "千円コンサート" 開催中</div>
+        	<div style="float:right;margin-right:2px;margin-top:3px;">お問い合わせ Tel:075-801-4652<br/>毎月第三木曜日に "千円コンサート" 開催中</div>
             <div style="clear:right;"></div>
             <div style="float:right;margin-right:2px;margin-top:9px;">
                 <a href="http://www.youtube.com/watch?v=WBAuNmNx65Q" target="_blank"><img src="<?php bloginfo('template_url');?>/index/youtube.png" class="sns-icon"/></a>

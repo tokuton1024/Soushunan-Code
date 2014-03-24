@@ -14,7 +14,7 @@
 	<?php $cat  = get_the_category();?> 
 	   <?php $cat = $cat[0]; $category = $cat->cat_name;?>
 		<?php if($category=='blog'){?>
-                <p class="date"><?php echo the_date("Y年n月j日 l"); ?></p>
+                <p class="date"><?php echo the_date('Y-m-d'); ?></p>
 		<p class="title"><?php the_title(); ?></p>
 		<HR class="archive">
                 <li class="clearfix">
@@ -32,10 +32,11 @@
 	    </td>
         </tr>
         <tr>
-            <td id="Middle" class="Middle"  style = "text-align:left;">
-		<a href = "<?php bloginfo('url');?>/jp/">
-		<img src="<?php bloginfo('template_url');?>/title/logo.png" class ="image-title">
-	    	</a>
+            <td id="Middle" class="C_Middle">
+                <div class="Blog_ImageTitle">
+                    <a href = "<?php bloginfo('url');?>/jp/"><img src="<?php bloginfo('template_url');?>/title/logo.png" class ="image-title"></a>
+                </div>
+	    	
 		<br /><br />
 		<ul class="archive-list">
 			<?php wp_get_archives('format=custom&before=<li class="archive-item">&after=</li>'); ?>
@@ -46,7 +47,7 @@
             <td></td>
         </tr>
         <tr>
-            <td colspan="2"><p class="footer">© 2013 Soushunan. All rights reserved.</p></td>
+            <td colspan="2"><p class="footer">© 2014 Soushunan. All rights reserved.</p></td>
         </tr>
     </table>
 <br/>
@@ -65,7 +66,6 @@
 			var width_R = 650
 			}
 			j("#left-img").css("width",width_L);
-			j("#Middle").css("width",width_M);
     	});
 </script>
 <?php get_footer(); ?>

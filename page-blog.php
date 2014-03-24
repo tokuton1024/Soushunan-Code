@@ -8,7 +8,7 @@ $cat = get_the_category();
     <table>
         <tr>
             <td rowspan="5" class="left">
-		<img src="<?php bloginfo('template_url');?>/img/top-page-Left.png" height="100%">
+		<img src="<?php bloginfo('template_url');?>/img/top-page-Left.png" class="left">
 	    </td>
             <td colspan="2">
             	<img src="<?php bloginfo('template_url');?>/img/right1.png">
@@ -16,7 +16,9 @@ $cat = get_the_category();
         </tr>
         <tr>
             <td colspan="1">
-				<img src="<?php bloginfo('template_url');?>/title/<?php echo $cat[0]->name; ?>.png" style = "width:100%;" class ="image-title">
+            	<div class="image-title">
+					<img src="<?php bloginfo('template_url');?>/title/<?php echo $cat[0]->name; ?>.png" style = "width:100%;" class ="image-title">
+                </div>
 	    	</td>
             <td class = "logo">
 		<a href = "<?php home_url()?>/">
@@ -37,7 +39,7 @@ $cat = get_the_category();
                 </ul>
 	    </td>
             <td style = "width:70%;" RowSpan="2">
-<img src="<?php bloginfo('template_url');?>/img/<?php echo $cat[0]->name; ?>.png"  style = "width:100%;">
+<img src="<?php bloginfo('template_url');?>/img/<?php echo $cat[0]->name; ?>.png">
 		</td>
         </tr>
 	<tr>
@@ -47,7 +49,7 @@ $cat = get_the_category();
 		</td>
 	</tr>
         <tr>
-            <td colspan="2"><p class="footer">© 2013 Soushunan. All rights reserved.</p></td>
+            <td colspan="2"><p class="footer">© 2014 Soushunan. All rights reserved.</p></td>
         </tr>
     </table>
 <br/>
